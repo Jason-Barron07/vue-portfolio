@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ">
+            <ul class="navbar-nav justify-content-center">
               <li class="nav-item ">
              <router-link to="/">Home</router-link>
               </li> |

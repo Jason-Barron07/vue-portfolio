@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HomeImage from '@/components/HomeImageComp.vue'
+import HomeImage from '@/components/HomeComp.vue'
 
 export default {
   components:{

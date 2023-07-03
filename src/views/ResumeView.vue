@@ -1,27 +1,29 @@
 <template>
     <div class="container">
-        <div class="row" v-for="testimonial in testimonials" :key="testimonial.id">
-            <img :src="testimonial.URL" :alt="testimonial.Title">
-            <p>{{testimonial.Title}}</p>
-            <p>{{testimonial.Content}}</p>
+     
+        <div> 
+        <img src="https://i.postimg.cc/7ZqHcMdP/code-1839406-1280.jpg" alt="" class="object-fit-cover border rounded">
         </div>
 
-    </div>
+        
+        
+        </div>
 </template>
 
 <script>
     export default {
-        computed:{
-            testimonials(){
-                return this.$store.state.testimonials
-            }
-        },
-        mounted(){
-            this.$store.dispatch('fetchTestimonial')
-        }
+      
     }
 </script>
 
 <style scoped>
+
+div img{
+    max-width:50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-90%,-30%);
+}
 
 </style>

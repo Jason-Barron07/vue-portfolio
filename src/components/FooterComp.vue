@@ -16,8 +16,8 @@
 
 footer{
 background-color:#35A7FF;
-bottom:0;
-width:100%;
 padding:2rem;
+position: absolute;
+width:100%;
 }
 </style>

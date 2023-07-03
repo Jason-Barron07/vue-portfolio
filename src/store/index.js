@@ -23,15 +23,23 @@ export default createStore({
     async fetchTestimonial(context){
       try{
         let res = await fetch(dataURL)
-        console.log(res);
         let {testimonials} = await res.json()
-        console.log(testimonials);
         context.commit('setTestimonial',testimonials)
       } catch (e){
         console.log(e.message);
       }
+    },
+    async fetchSkills(context){
+      try{
+        let res = await fetch(dataURL)
+        let {skills} = await res.json()
+        context.commit('setSkills',skills)
+      }catch(e){
+        console.log(e.message)
+      }
     }
   },
+
   modules: {
   }
 })

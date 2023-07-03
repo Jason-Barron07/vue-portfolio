@@ -2,9 +2,7 @@
   
 <NavBarComp/>
 <main class="container-fluid">
-
-  
-  <router-view />
+<router-view />
 </main>
 <FooterComp/>
 </template>

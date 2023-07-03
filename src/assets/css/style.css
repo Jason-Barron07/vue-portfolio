@@ -4,6 +4,7 @@
 *::after,
 *::before{
 
+   
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -11,6 +12,12 @@
     font-size: 30px;
     font-weight: 600;
 }
+
+/* body{
+    width:auto;
+    height:100vw;
+} */
+
 
 #app{
     display:grid;

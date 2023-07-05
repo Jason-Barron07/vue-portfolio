@@ -1,21 +1,24 @@
 <template>
-    <div>
-        <TabandNav/>
+    <div class="container">
+      <CardComp />
     </div>
 </template>
 
 <script>
 
-import TabandNav from '@/components/TabAndNavComp.vue';
-
+import CardComp from '@/components/CardComp.vue'
 export default {
-      components:{
-        TabandNav
-      }
+     components:{
+      CardComp
+     }
     }
 
 </script>
 
 <style  scoped>
-
+*{
+  background: rgb(255,51,129);
+background: linear-gradient(90deg, rgba(255,51,129,1) 35%, rgba(255,103,0,1) 100%);
+  margin-bottom: 30px;
+}
 </style>

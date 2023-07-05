@@ -19,7 +19,14 @@ export default createStore({
     },
     setSkills(state,skills){
       state.skills = skills
+    },
+    setProjects(state,projects){
+      state.projects = projects
+    },
+    setEducation(state,education){
+      state.education = education
     }
+    
 
   },
   actions: {
@@ -29,7 +36,7 @@ export default createStore({
         let {testimonials} = await res.json()
         context.commit('setTestimonial',testimonials)
       } catch (e){
-        console.log(e.message);
+        alert(e.message);
       }
     },
     async fetchSkills(context){
@@ -38,7 +45,25 @@ export default createStore({
         let {skills} = await res.json()
         context.commit('setSkills',skills)
       }catch(e){
-        console.log(e.message)
+        alert(e.message)
+      }
+    },
+    async fetchProjects(context){
+      try{
+        let res = await fetch(dataURL)
+        let {projects} = await res.json()
+        context.commit('setProjects',projects)
+      }catch(e){
+        alert(e.message)
+      }
+    },
+    async fetchEducation(context){
+      try{
+        let res = await fetch(dataURL)
+        let {education} = await res.json()
+        context.commit('setEducation',education)
+      }catch(e){
+        alert(e.message)
       }
     }
   },

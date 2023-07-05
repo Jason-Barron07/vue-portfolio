@@ -11,22 +11,29 @@
             <ul class="navbar-nav justify-content-center">
               <li class="nav-item ">
              <router-link to="/">Home</router-link>
-              </li> |
+              </li> 
               <li class="nav-item" id="nav-link">
                 <router-link to="/about">About</router-link>
-              </li> |
+              </li> 
               <li class="nav-item " >
                 <router-link to="/testimonial" >Testimonial</router-link>
-              </li> |
+              </li> 
               <li class="nav-item" id="nav-link">
                <router-link to="/projects">Projects</router-link>
-              </li> |
-              <li class="nav-item">
-                <router-link to="/resume">Resume</router-link>
-               </li> |
+              </li> 
+              <li class="nav-item dropdown">
+                <router-link to="/resume" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  Resume
+                </router-link>
+                <ul class="dropdown-menu">
+                  <li><router-link to="/resume" class="dropdown-item" href="#">Skills</router-link></li>
+                  <li><router-link to="/resume" class="dropdown-item" href="#">Education</router-link></li>
+                </ul>
+              </li>
+               
                <li class="nav-item" id="nav-link">
-                <router-link to="/contact"  >Contact</router-link>
-               </li> |
+                <router-link to="/contact" >Contact</router-link>
+               </li> 
             </ul>
           </div>
         </div>
@@ -63,10 +70,15 @@ a:hover{
 #nav-link a:hover{
   color:#FF3381;
 }
-a{
-  display: flex-end !important;
-  justify-content: end !important;
-}
 
+
+
+
+.navbar-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
 </style>

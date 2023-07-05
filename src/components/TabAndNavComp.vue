@@ -1,28 +1,23 @@
 <template>
-    <div>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-              jdfkdsjkf
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-              dfjksdfdsfd
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-              kfhdjfksd
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
+    <div class="conatiner-fluid" >
+      <div class="row" v-for="skill in skills" :key="skill.id">
+         {{skills.Title }}
+        {{ skills.Content }}
+        </div>
+       
     </div>
 </template>
 
 <script>
     export default {
-        
+        computed:{
+            skills(){
+                return this.$store.state.skills
+            }
+        },
+        mounted(){
+            this.$store.dispatch('fetchSkills')
+        }
     }
 </script>
 

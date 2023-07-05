@@ -16,6 +16,9 @@ export default createStore({
   mutations: {
     setTestimonial(state,testimonials){
       state.testimonials = testimonials
+    },
+    setSkills(state,skills){
+      state.skills = skills
     }
 
   },

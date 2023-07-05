@@ -1,6 +1,6 @@
 <template>
     <div class="conatiner-fluid justify-content-center gap-5" >
-        <div class="row " v-for="education in education" :key="education.Id">
+        <div class="row" v-for="education in education" :key="education.Id">
         <div class="card ">
             <h4 class="display-4">{{education.Year}}</h4>
             <div class="card-body">

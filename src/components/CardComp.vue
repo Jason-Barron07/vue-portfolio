@@ -9,7 +9,8 @@
                         {{projects.Title}}
                     </h5>
                     <a :href="projects.URL" target="_blank"><button class="btn">Go live</button></a>
-                  </div>
+                    <a :href="projects.URL" target="_blank"><button class="btn">Github</button></a>
+                </div>
                 </div>
             </div>
         </div>
@@ -38,4 +39,8 @@ button{
     border:solid 2px #FF6700;
     border-radius: 0.5em;
 }
+button:hover{
+    background-color:#FF6700;
+    color:#fff;
+  }
 </style>

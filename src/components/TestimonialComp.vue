@@ -1,14 +1,14 @@
 <template>
   <br/>
-    <div class="container">
+    <div class="container ">
         <div class="row justify-content-center gap-5">
-        <div class="card" v-for="testimonial in testimonials" style="width: 16rem;" :key="testimonial.id">
+        <div class="card animate__animated animate__backInUp " v-for="testimonial in testimonials" style="width: 16rem;" :key="testimonial.id">
         <div class="profile">
-            <img :src="testimonial.URL" id="img" class="card-img-top" :alt="testimonials.Title" loading="lazy">
+            <img :src="testimonial.URL" id="img" class="card-img-top" :alt="testimonial.Title" loading="lazy">
         </div>
             <div class="card-body">
                 <h4 class="card-head">
-                    {{ testimonials.Title }}
+                    {{ testimonial.Title }}
                 </h4>
                 <p class="card-text">
                     {{ testimonial.Content }}

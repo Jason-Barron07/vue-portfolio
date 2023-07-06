@@ -36,27 +36,27 @@
       </div>
       </div> -->
       
-   <div class="container">
+   <div class="container animate__animated animate__backInUp 1s">
     <div class="row">
       <form class="p-5" action="https://formspree.io/f/xdoronvn" method="POST">
       <div>
-        <label for="exampleFormControlInput1" class="form-label">First Name </label>
+        <label for="exampleFormControlInput1" class="form-label"> </label>
         <input name="firstname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name (required)" required>
       </div>
       <div>
-        <label for="exampleFormControlInput1" class="form-label">Second Name</label>
+        <label for="exampleFormControlInput1" class="form-label"></label>
         <input name="secondname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Second Name">
       </div>
       <div>
-        <label for="exampleFormControlInput1" class="form-label">Surname</label>
+        <label for="exampleFormControlInput1" class="form-label"></label>
         <input name="surname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Surname (required)" required>
       </div>
       <div>
-        <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+        <label for="exampleFormControlInput1" class="form-label"></label>
         <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address (required)" required>
       </div>
      
-        <label for="exampleFormControlTextarea1" class="form-label">Comment or Message</label>
+        <label for="exampleFormControlTextarea1" class="form-label"></label>
         <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Type a message here..." rows="4"></textarea>
         <br>
         <div class="middle d-flex justify-content-center">

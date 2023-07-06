@@ -1,15 +1,15 @@
 <template>
     <br/>
-    <div class="container">
-        <div class="row justify-content-center gap-5">
-            <div class="card p-0" v-for="projects in projects" style="width: 15rem;" :key="projects.id">
+    <div class="container animate__animated animate__backInDown 1s">
+        <div class="row justify-content-center gap-5 ">
+            <div class="card p-0 " v-for="projects in projects" style="width: 15rem;" :key="projects.id">
                 <img :src="projects.Image" id="img" class="card-img-top" :alt="projects.Title" loading="lazy">
                 <div class="card-body">
                     <h5 class="card-head">
                         {{projects.Title}}
                     </h5>
                     <a :href="projects.URL" target="_blank"><button class="btn">Go live</button></a>
-                    <a :href="projects.URL" target="_blank"><button class="btn">Github</button></a>
+                    <a :href="projects.Github" target="_blank"><button class="btn">Github</button></a>
                 </div>
                 </div>
             </div>
@@ -42,5 +42,7 @@ button{
 button:hover{
     background-color:#FF6700;
     color:#fff;
+    
   }
+  
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid animate__animated animate__shakeY">
         <div class="image">
         <img src="https://i.postimg.cc/vHD5qZ0D/1338355.webp" alt="landing page picture" >
         </div>

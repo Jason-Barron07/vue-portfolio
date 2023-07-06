@@ -1,45 +1,68 @@
 <template>
-  
 
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid ">
-          <router-link class="navbar-brand" to="/"><img src="https://i.postimg.cc/sgYMcTBf/Screenshot-2023-07-03-115606.png" alt=""></router-link>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://i.postimg.cc/sgYMcTBf/Screenshot-2023-07-03-115606.png"
+              id="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-center">
-              <li class="nav-item ">
-             <router-link to="/">Home</router-link>
-              </li> 
-              <li class="nav-item" id="nav-link">
-                <router-link to="/about">About</router-link>
-              </li> 
-              <li class="nav-item " >
-                <router-link to="/testimonial" >Testimonial</router-link>
-              </li> 
-              <li class="nav-item" id="nav-link">
-               <router-link to="/projects">Projects</router-link>
-              </li> 
-              <li class="nav-item dropdown">
-                <router-link to="/resume" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                  Resume
-                </router-link>
-                <ul class="dropdown-menu">
-                  <li><router-link to="/resume" class="dropdown-item" href="#">Skills</router-link></li>
-                  <li><router-link to="/resume" class="dropdown-item" href="#">Education</router-link></li>
-                </ul>
-              </li>
-               
-               <li class="nav-item" id="nav-link">
-                <router-link to="/contact" >Contact</router-link>
-               </li> 
-            </ul>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://i.postimg.cc/sgYMcTBf/Screenshot-2023-07-03-115606.png" alt="logo"></a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <router-link class="nav-link" to="/">Home</router-link>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <router-link class="nav-link" to="/about">About</router-link>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <router-link class="nav-link" to="/projects"
+                    >Projects</router-link
+                  >
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <router-link class="nav-link" to="/resume">Resume</router-link>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <router-link class="nav-link" to="/testimonial"
+                    >Testimonials</router-link
+                  >
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <router-link class="nav-link" to="/contact"
+                    >Contact</router-link
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
-
-
 
 </template>
 

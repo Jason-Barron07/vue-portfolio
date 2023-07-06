@@ -1,5 +1,5 @@
 <template>
-    <div class="conatiner-fluid justify-content-center gap-5" >
+    <!-- <div class="conatiner-fluid justify-content-center gap-5" >
         <div class="row" v-for="education in education" :key="education.Id">
         <div class="card ">
             <h4 class="display-4">{{education.Year}}</h4>
@@ -10,7 +10,22 @@
             </div>
         </div>
     </div>
+    </div> -->
+    |
+<div class="container">
+    <div class="row justify-content-center gap-5 p-4" v-for="education in education" :key="education.Id">
+    <div class="card" style="width: 16rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{education.Year}}</h5> 
+          <p class="card-text">{{education.Content}}</p>
+        </div>
+      </div>
+      
     </div>
+    |
+
+</div>
+
 
 </template>
 
@@ -23,24 +38,23 @@
         },
         mounted(){
             this.$store.dispatch('fetchEducation')
-        }
+       },
+       
+       
+    
+       
     }
 </script>
 
 <style scoped>
-.container-fluid{
-    width:10rem;
+
+*{
+    font-size: 20px;
+    
 }
+
 .card{
-    background-color:#FF6700;
-    width:10rem;
-    padding:10px;
-   
+    box-shadow:10px 5px 5px #FF6700
 }
-.row {
-   width:300px;
-    box-shadow: 10px 5px 5px #FF3381;
-    border-radius:0.5em;
-   
-}
+
 </style>

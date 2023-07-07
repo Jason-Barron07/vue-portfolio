@@ -8,7 +8,7 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h1 class="card-title animate__animated animate__backInRight">I AM JASON BARRON</h1>
-                  <p class="card-text animate__animated animate__backInRight">My name is Jason Barron, I am generally a quite person. I enjoy the outdoors but for the most part in enjoy playing video games and working on my passion which is music and software development. I've been interested in code from the young age of 15, I am 19 now. I am hard working when it comes to my passions. I approach everything i do with the mindset of trying to be the best. Thats what I stive for in life , to be the best I can be and more.</p>
+                  <p class="card-text animate__animated animate__backInRight">My name is Jason Barron, I am generally a quite person. I enjoy the outdoors but for the most part in enjoy playing video games and working on my passion which is music and software development. I've been interested in code from the young age of 15, I am 19 now. I am hard working when it comes to my passions. I approach everything I do with the mindset of trying to be the best. Thats what I stive for in life , to be the best I can be and more.</p>
 
                 </div>
               </div>

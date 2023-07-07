@@ -41,7 +41,8 @@
       <form class="p-5" action="https://formspree.io/f/xdoronvn" method="POST">
       <div>
         <label for="exampleFormControlInput1" class="form-label"> </label>
-        <input name="firstname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name (required)" required>
+        <input name="firstname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name (required)" required oninvalid="this.setCustomValidity('Please enter your name')"
+        oninput="this.setCustomValidity('')">
       </div>
       <div>
         <label for="exampleFormControlInput1" class="form-label"></label>
@@ -49,11 +50,13 @@
       </div>
       <div>
         <label for="exampleFormControlInput1" class="form-label"></label>
-        <input name="surname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Surname (required)" required>
+        <input name="surname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Surname (required)" required oninvalid="this.setCustomValidity('Please enter your surname')"
+        oninput="this.setCustomValidity('')">
       </div>
       <div>
         <label for="exampleFormControlInput1" class="form-label"></label>
-        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address (required)" required>
+        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address (required)" required  oninvalid="this.setCustomValidity('Please enter a valid email address')"
+        oninput="this.setCustomValidity('')">
       </div>
      
         <label for="exampleFormControlTextarea1" class="form-label"></label>

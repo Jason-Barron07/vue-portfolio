@@ -1,6 +1,6 @@
 <template>
   <br/>
-    <div class="container ">
+    <div class="container">
         <div class="row justify-content-center gap-5">
         <div class="card animate__animated animate__backInUp " v-for="testimonial in testimonials" style="width: 16rem;" :key="testimonial.id">
         <div class="profile">

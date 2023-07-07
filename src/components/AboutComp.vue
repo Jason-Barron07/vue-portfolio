@@ -3,7 +3,7 @@
         <div class="card mb-3 " style="max-width: 1920px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="https://i.postimg.cc/jd3mRmLk/picture3.jpg" class="img-fluid rounded-start animate__animated animate__backInDown" alt="...">
+                <img src="https://i.postimg.cc/jd3mRmLk/picture3.jpg" class="img-fluid rounded-start animate__animated animate__backInDown" alt="picture of me">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -34,4 +34,14 @@ h1{
     color:#FF6700;
 }
 
+@media only screen and (max-width: 800px){
+   .card{
+    max-width:540px;
+   }
+
+   .card-text{
+    font-size:16px;
+    margin-top:0;
+   }
+}
 </style>

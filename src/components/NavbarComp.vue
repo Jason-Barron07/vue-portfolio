@@ -2,11 +2,11 @@
 
       <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <router-link class="navbar-brand" to="/">
             <img
               src="https://i.postimg.cc/sgYMcTBf/Screenshot-2023-07-03-115606.png"
               id="logo"
-          /></a>
+          /></router-link>
           <button
             class="navbar-toggler"
             type="button"

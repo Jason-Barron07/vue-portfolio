@@ -96,9 +96,6 @@ a:hover{
   color:#FF3381;
 }
 
-
-
-
 .navbar-nav{
   display: flex;
   justify-content: center;
@@ -107,8 +104,17 @@ a:hover{
 }
 
 @media only screen and (max-width: 800px){
-   img{
-    padding:2rem;
-   }
+  .navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #logo{
+    max-width:50%;
+  }
 }
+
+
 </style>

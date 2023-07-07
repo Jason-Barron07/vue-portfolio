@@ -72,6 +72,8 @@
     }
 </script>
 
+
+
 <style scoped>
 
 
@@ -104,4 +106,9 @@ a:hover{
   gap: 2rem;
 }
 
+@media only screen and (max-width: 800px){
+   img{
+    padding:2rem;
+   }
+}
 </style>

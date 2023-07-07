@@ -38,6 +38,7 @@ button{
     background-color:#FF3381;
     border:solid 2px #FF6700;
     border-radius: 0.5em;
+    margin:10px;
 }
 button:hover{
     background-color:#FF6700;
